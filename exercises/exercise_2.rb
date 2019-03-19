@@ -6,10 +6,10 @@ puts "----------"
 
 # Your code goes here ...
 
-@first_store = Store.find_by(id: 1)
-puts @first_store.name
-@second_store = Store.find_by(id: 2)
+@store1 = Store.find_by(id: 1)
+puts @store1.name
+@store2 = Store.find_by(id: 2)
 
-@first_store.name = 'Burnaby? More like Shmurnaby'
-@first_store.save
-puts @first_store.name
+@store1.name = 'Burnaby? More like Shmurnaby'
+@store1.save
+puts @store1.name
